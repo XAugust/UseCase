@@ -9,5 +9,193 @@
     is_loaded  	TRUE
     quid       	"5EEED32803C4"
     exportControl 	"Public"
-    logical_models 	(list unit_reference_list)
-    logical_presentations 	(list unit_reference_list))
+    logical_models 	(list unit_reference_list
+	(object Class_Category "频道栏目管理"
+	    quid       	"5EEF7C4A006D"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list
+		(object Class_Category "频道范围权限设置"
+		    quid       	"5EEF7CBC01D8"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list))
+		(object Class_Category "频道编辑权限设置"
+		    quid       	"5EEF7CD901F7"
+		    exportControl 	"Public"
+		    logical_models 	(list unit_reference_list)
+		    logical_presentations 	(list unit_reference_list)))
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "频道栏目管理"
+		    quid       	"5EEF7CA40320"
+		    title      	"频道栏目管理"
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	825
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理::频道范围权限设置" @1
+			    location   	(592, 1056)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(448, 972)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	288
+				justify    	0
+				label      	"频道范围权限设置")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEF7CBC01D8"
+			    width      	300
+			    height     	180)
+			(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理::频道编辑权限设置" @2
+			    location   	(1360, 1072)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(1216, 988)
+				fill_color 	13434879
+				nlines     	2
+				max_width  	288
+				justify    	0
+				label      	"频道编辑权限设置")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"5EEF7CD901F7"
+			    width      	300
+			    height     	180)))))
+	(object Class_Category "内容管理"
+	    quid       	"5EEF7C660222"
+	    visible_categories 	(list visibility_relationship_list
+		(object Visibility_Relationship
+		    quid       	"5EEF7C8C019B"
+		    supplier   	"Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::内容编辑"
+		    quidu      	"5EEF7C6E02CA"))
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "内容编辑"
+	    quid       	"5EEF7C6E02CA"
+	    visible_categories 	(list visibility_relationship_list
+		(object Visibility_Relationship
+		    quid       	"5EEF7C940161"
+		    supplier   	"Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::内容管理"
+		    quidu      	"5EEF7C660222"))
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list)))
+    logical_presentations 	(list unit_reference_list
+	(object UseCaseDiagram "内容管理子系统"
+	    quid       	"5EEF7BD30212"
+	    title      	"内容管理子系统"
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	1719
+	    origin_y   	106
+	    items      	(list diagram_item_list
+		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::频道栏目管理" @3
+		    location   	(976, 1120)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@3
+			location   	(832, 1036)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"频道栏目管理")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEF7C4A006D"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::内容管理" @4
+		    location   	(1872, 1168)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@4
+			location   	(1728, 1084)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"内容管理")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEF7C660222"
+		    width      	300
+		    height     	180)
+		(object CategoryView "Use Case View::Use-Case Model::Use Cases::云迪在线网络学习平台::内容管理子系统::内容编辑" @5
+		    location   	(1392, 752)
+		    font       	(object Font
+			size       	9
+			face       	"Arial"
+			bold       	FALSE
+			italics    	FALSE
+			underline  	FALSE
+			strike     	FALSE
+			color      	0
+			default_color 	TRUE)
+		    label      	(object ItemLabel
+			Parent_View 	@5
+			location   	(1248, 668)
+			fill_color 	13434879
+			nlines     	2
+			max_width  	288
+			justify    	0
+			label      	"内容编辑")
+		    icon_style 	"Icon"
+		    line_color 	3342489
+		    fill_color 	13434879
+		    quidu      	"5EEF7C6E02CA"
+		    width      	300
+		    height     	180)
+		(object ImportView "" @6
+		    stereotype 	TRUE
+		    line_color 	3342489
+		    quidu      	"5EEF7C940161"
+		    client     	@5
+		    supplier   	@4
+		    vertices   	(list Points
+			(1496, 842)
+			(1721, 1037))
+		    line_style 	0)))))
